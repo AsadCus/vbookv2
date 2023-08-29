@@ -1,0 +1,159 @@
+.top-left img{
+    width: 10vh;
+}
+@media only screen and (max-width: 768px){
+    .top-middle h3{
+        font-size: 1rem;
+    }
+    .top-right h3{
+        font-size: 1rem;
+    }
+}
+
+
+.cts-content p:nth-child(2){
+    font-size: 1.15rem;
+}
+.box{
+    transform: translateY(.1rem); 
+    width: 15px; 
+    height: 15px; 
+    background: black;
+}
+@media only screen and (max-width: 1200px){
+    .cts-content p:nth-child(2){
+        font-size: .9rem;
+    }
+}
+/* @media only screen and (max-width: 992px){
+    .cts-content p:nth-child(2){
+        font-size: .8rem;
+        width: 100%;
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        overflow: hidden;
+    }
+    .content-qr{
+        font-size: .5rem;
+    }
+    .cth-left h4{
+        font-size: .75rem;
+    }
+} */
+/* .con-1{
+    margin-left: 10rem;
+} */
+.content-qr p{
+    font-size: 70%;
+}
+/* .content-qr {
+    font-size: 70%;
+    margin-left: -2rem;
+} */
+.ct-box{
+    overflow-y: auto;
+    height: 16rem;
+    margin-bottom: .5rem;
+    border: 1px solid grey;
+}
+/* .ct-subheader{
+    height: 80rem;
+} */
+.img-dnh{
+    width: 100%;
+    height: 21vh;
+}
+.img-qr{
+    width: 70%;
+    object-fit: contain;
+
+}
+.img{
+    position: relative;
+}
+.img-re{
+    position: relative;
+    left: 5rem;
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+.img-ab{
+    width: 2vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+
+
+@media only screen and (max-width: 1200px){
+    .content-qr p{
+        font-size: 75%;
+    }
+    .footer-red p{
+        font-size: 70%;
+    }
+}
+@media only screen and (max-width: 992px){
+   .pm{
+    font-size: 95%;
+   }
+}
+/* @media only screen and (max-width: 971px){
+    .footer-red p{
+        font-size: 60%;
+    }
+}
+@media only screen and (max-width: 825px){
+    .footer-red p{
+        font-size: %;
+    }
+} */
+/* @media only screen and (max-width: 971px){
+    .footer-red p{
+        font-size: 50%;
+    }
+} */
+
+/* footer{
+    position: sticky; 
+    bottom: 0;
+    background-color: white;
+} */
+
+@media only screen and (max-width: 768px){
+    .content-qr p{
+        font-size: 60%;
+    }
+}
+@media only screen and (max-width: 673px){
+    .information{
+        font-size: 75%;
+    }
+}
+@media only screen and (max-width: 640px){
+    .footer-red p{
+        font-size: 55%;
+    }
+}
+@media only screen and (max-width: 516px){
+    .content-qr p{
+        font-size: 45%;
+    }
+}
+@media only screen and (max-width: 400PX){
+    .top-middle h3{
+        font-size: 75%;
+    }
+    .top-right h3{
+        font-size: 75%;
+    }
+}
+@media only screen and (max-width: 356px){
+    .pm{
+        font-size: 75%;
+    }
+}
