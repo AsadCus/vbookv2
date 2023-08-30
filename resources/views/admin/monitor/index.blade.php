@@ -37,26 +37,19 @@
                 <h5 id="MyClockDisplay" onload="showTime()"></h5>
             </div>
         </div>
-        <div class="container py-4">
-            <div class="row">
-                <div class="col-12 col-lg-5">
-                    <img class="img-dnh" style="height: 180px" src="{{ asset('image_monitor/denah.png')}}" alt="">
-                </div>
-                <div class="col-4 col-lg-2">
-                    <div class="content-qr text-center" style="padding: .5rem;box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25); height: 180px;">
-                        <p class="mb-0 fw-bold">ABSENSI</p>
-                        <p class="mb-0 fw-bold">KEHADIRAN RAPAT</p>
-                        <img class="img-qr" src="{{ asset('qrcode/attendance-qrcode.png')}}" alt="">
-                    </div>
-                </div>
-                <div class="col-8 col-lg-5">
+
+        <div class="container py-4" id="Banner">
+                    <img class="img-dnh" src="{{ asset('image_monitor/denah.png')}}" alt="">
                     <div class="content-top">
-                        <video width="100%" height="180px" style="background-color: #000;" controls autoplay loop>
+                        <video width="100%" height="250px" style="background-color: #000;" controls autoplay loop>
                             <source src="{{ asset("video/company/$company->video") }}">
                         </video>
                     </div>
-                </div>
-            </div>
+                    <div class="content-qr text-center" style="padding: 1rem;box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25); height: max-content;">
+                        <p class="mb-0 fw-bold">ABSENSI</p>
+                        <p class="mb-0 fw-bold">KEHADIRAN RAPAT</p>
+                        <img class="img-qr mt-3" src="{{ asset('qrcode/attendance-qrcode.png')}}" alt="">
+                    </div>
         </div>
         <div class="container" id="container-monitor-info">
             <div id="row-card" class="row" style="margin-bottom: 5rem;">
@@ -128,7 +121,7 @@
             @endif --}}
         </div>
         <footer>
-            <div class="row" style="border: .5px solid rgb(199, 198, 198); position: fixed; bottom: 0; background: white; width: 100%; height: 6vh";>
+            <div class="row" style="border: .5px solid rgb(199, 198, 198); position: fixed; bottom: 0; background: white; width: 105%;";>
                 <div class="col-12 col-sm-3 col-lg-2" style="background: #A10000;">
                     <div class="footer-red d-flex justify-content-center align-items-center gap-2" style="padding: .75rem;">
                         <div class="">
@@ -148,16 +141,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
     <script>
-        function refreshContent() {
-            $.ajax({
-                type: 'GET',
-                url: '{{ route('monitor.card') }}'
-            }).done(function (data) {
-                $("#row-card").remove();
-                $("#container-monitor-info").append(data)
-            });
-        }
-        setInterval(refreshContent, 5000);
+        // function refreshContent() {
+        //     $.ajax({
+        //         type: 'GET',
+        //         url: '{{ route('monitor.card') }}'
+        //     }).done(function (data) {
+        //         $("#row-card").remove();
+        //         $("#container-monitor-info").append(data)
+        //     });
+        // }
+        // setInterval(refreshContent, 5000);
 
         function showTime(){
             var date = new Date();
